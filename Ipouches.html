@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iphone Cases</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: #db7093;
+    }
+    h2 {
+      text-align: center;
+      font-weight: lighter;
+      font-size: 20px;
+      color: #c54c82;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 0%;
+      border: 0;
+      border-radius: 10px;
+      width: 150px;
+      height: auto;
+      transform: scaleX(1.2);
+    }
+    p {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 250px;
+      padding: 15px 10px;
+    }
+
+    body {
+      background: white;
+      text-align: center;
+    }
+    a {
+      padding: 0;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #bd1245;
+      text-decoration: underline;
+    }
+    .coder {
+      text-align: center;
+      font-style: italic;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      color: black;
+      padding: 10px 35px;
+      border: #c54c82;
+      border-radius: 5px;
+      font-weight: bold;
+      background: #db7093;
+      font-size: 15px;
+      transition: all 200ms ease-in-out;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 2);
+    }
+    button:hover {
+      color: #c54c82;
+      background: #bd1245;
+      cursor: pointer;
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 500px;
+      background: #f9ecec;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Glam Your Iphone!</h1>
+      <h2>
+        <strong>Get youself an Iphone case</strong>
+      </h2>
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/548/original/iphonePouch.jpg?1759747654"
+        width="100"
+        alt="iphone case"
+      />
+      <p>
+        All things girly! Girly iPhone cases are more than just phone protection
+        — they are a statement of personality and style. From soft pastel shades
+        to glittery finishes and floral designs, these cases bring out a
+        feminine charm that adds a touch of beauty to everyday tech. They
+        reflect confidence, creativity, and a love for all things elegant,
+        making your phone feel uniquely yours.
+        <a
+          href="https://www.amazon.com/iphone-case/s?k=iphone+case"
+          class="view"
+          target="_blank"
+          >See more</a
+        >
+      </p>
+
+      <p>
+        <button>Buy</button>
+      </p>
+      <hr />
+      <span class="coder"
+        ><em>This website was built by Carol B Kewagamang</em></span
+      >
+      <script>
+        function buy() {
+          let name = prompt("What is your name?");
+          let contact = prompt("Whats your email?");
+          if (name && name.length > 0 && contact && contact.length > 0) {
+            let h1Header = document.querySelector("h1");
+            h1Header.innerHTML = "Bought🎉 " + "Thank You, " + " " + name;
+            let h2Header = document.querySelector("h2");
+            h2Header.innerHTML = "Your lovely case is on the way🩷";
+          }
+        }
+        let pressedButton = document.querySelector("button");
+        pressedButton.addEventListener("click", buy);
+      </script>
+    </div>
+  </body>
+</html>
